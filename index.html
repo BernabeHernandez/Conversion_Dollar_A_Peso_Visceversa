@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berna</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" >
+
+        <script src="./documento.js"></script>
+        <h3>Conversión de Pesos a Dólares y viceversa</h3>
+    
+        <label for="cantidad">Cantidad:</label><br>
+        <input type="number" id="cantidad" name="cantidad">
+        <button onclick="limpiarResultados()">Limpiar</button><br>
+      
+        <label for="moneda">Moneda:</label><br>
+        <select id="moneda" name="moneda">
+          <option value="pesos">Pesos</option><br><br>
+          <option value="dolares">Dólares</option>
+        </select>
+        <button onclick="convertirMoneda()">Convertir</button><br>
+      
+        <p id="resultado"></p>
+
+    </div>
+</body>
+</html>
